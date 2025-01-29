@@ -3,4 +3,6 @@ project(learningCplusplus)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(learningCplusplus main.cpp)
+add_executable(learningCplusplus main.cpp
+        library/functions.h
+        library/functions.cpp)
