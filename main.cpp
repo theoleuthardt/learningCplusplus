@@ -1,17 +1,9 @@
-#include <iostream>
-#include "library/functions.h"
+#include "library/basics.h"
+
+using namespace std;
 
 int main() {
 
-
-    const auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
-
-    for (int i = 1; i <= 5; i++) {
-        std::cout << "i = " << i << std::endl;
-    }
-
-    printNumber(1);
-
+    basics();
     return 0;
 }
