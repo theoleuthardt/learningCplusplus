@@ -58,7 +58,7 @@ int basics() {
 
     // traditional for loop
     cout << "Traditional for loop:" << endl;
-    for (int i = 0; i < sizeof(numbers) / sizeof(numbers[0]); i++) {
+    for (int i = 0; i < size(numbers); i++) {
         cout << numbers[i] << endl;
     }
 
