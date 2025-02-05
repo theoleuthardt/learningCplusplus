@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void printNumber(const int number) {
-    std::cout << "Number: " << number;
+    cout << "Number: " << number;
 }

@@ -10,4 +10,8 @@ add_executable(learningCplusplus main.cpp
         library/functions.h
         library/functions.cpp
         library/basics.cpp
-        library/basics.h)
+        library/basics.h
+        library/pointer.cpp
+        library/pointer.h
+        library/idiot.cpp
+        library/idiot.h)
