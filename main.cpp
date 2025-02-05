@@ -1,7 +1,6 @@
-#include <__stddef_null.h>
-
 #include "library/basics.h"
 #include "library/pointer.h"
+#include "library/idiot.h"
 
 using namespace std;
 
@@ -16,5 +15,10 @@ int main() {
     changeIntPointer(nullPtr);
     changeIntPointer(&number);
     changeIntReference(number);
+
+    // class idiot stuff
+    idiot idiot1 = idiot(1, 1, 1);
+    idiot1.setIntelligence(2);
+
     return 0;
 }
