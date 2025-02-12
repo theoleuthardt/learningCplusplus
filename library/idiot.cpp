@@ -1,39 +1,43 @@
 #include "idiot.h"
 
 // klassen sind ja so idiotensicher
-class idiot {
-    int id = 0;
-    int intelligence = 0;
-    int age = 0;
 
-public:
-    // standard constructor
-    idiot(const int id, const int intelligence, const int age) {
-        this->id = id;
-        this->intelligence = intelligence;
-        this->age = age;
-    }
-    // copy constructor with references
-    idiot(const int& id, const int& intelligence, const int& age) {
-        this->id = id;
-        this->intelligence = intelligence;
-        this->age = age;
-    }
-    // copy constructor with pointers
-    idiot(const int* id, const int* intelligence, const int* age) {
-        this->id = *id;
-        this->intelligence = *intelligence;
-        this->age = *age;
-    }
-    // destructor
-    ~idiot() = default;
+idiot::idiot(int id, int intelligence, int age) {
+    this->id = id;
+    this->intelligence = intelligence;
+    this->age = age;
+}
 
-private:
-    void setIntelligence(int intelligence) {
-        this->intelligence = intelligence;
-    }
+idiot::idiot(const int& id, const int& intelligence, const int& age) {
+    this->id = id;
+    this->intelligence = intelligence;
+    this->age = age;
+}
 
-    void setAge(int age) {
-        this->age = age;
-    }
+idiot::idiot(const int* id, const int* intelligence, const int* age) {
+    this->id = *id;
+    this->intelligence = *intelligence;
+    this->age = *age;
+}
+
+idiot::~idiot() {}
+
+int idiot::getId() const {
+    return this->id;
+}
+
+int idiot::getIntelligence() const {
+    return this->intelligence;
+}
+
+int idiot::getAge() const {
+    return this->age;
+}
+
+void idiot::setIntelligence(int intelligence) {
+    this->intelligence = intelligence;
+}
+
+void idiot::setAge(int age) {
+    this->age = age;
 }
